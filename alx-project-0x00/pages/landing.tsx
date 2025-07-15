@@ -1,15 +1,19 @@
 import React from "react";
 import Card from "@/components/Card";
+import Button from "@/components/Button";
 
 const Landing: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-8 space-y-8">
-      <h1 className="text-2xl font-semibold">Landing Page</h1>
+    <div>
+      <h1 className=" text-xl font-extralight">Landing Page</h1>
+      <Card />
 
-      {/* Render multiple cards */}
-      <Card />
-      <Card />
-      <Card />
+      {/* Buttons with different sizes and shapes */}
+      <div className="mt-8 space-y-4">
+        <Button title="Small Rounded" styles="text-sm rounded-sm" />
+        <Button title="Medium Rounded-md" styles="text-base rounded-md" />
+        <Button title="Large Rounded-full" styles="text-lg rounded-full" />
+      </div>
     </div>
   );
 };
