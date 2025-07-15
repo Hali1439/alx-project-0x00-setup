@@ -12,6 +12,4 @@ const Home: React.FC = () => {
 };
 
 export default Home;
-export interface PillProps {
-  title: string;
-}
+
